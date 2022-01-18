@@ -17,13 +17,14 @@ botaoCriptografar.addEventListener("click", function() {
     frasecriptografar = normalizar(frasecriptografar);
     var frasecodificada = codificar(frasecriptografar);
     caixatexto.value = frasecodificada;
-	alert('Criptografada com sucesso!');
+	
 });
 
 // Função para codificar a palavra / frase
 function codificar(frase) {
     frasecod = frase.replace(/i/gi,"imes").replace(/e/gi,"enter").replace(/a/gi, "ai").replace(/o/gi,"ober").replace(/u/gi,"ufat").toLowerCase();
     return frasecod;
+    alert('Criptografada com sucesso!');
 }
 
 
@@ -39,14 +40,14 @@ botaoDescriptografar.addEventListener("click", function() {
     console.log(frasedescodificada);
     console.log(caixatexto2);
     caixatexto2.value = frasedescodificada;
-	alert('Desriptografada com sucesso!')
+	
 });
 
 //Esta função descodifica a frase
 function descodificar(frase){
     frasedecod = frase.replace(/ai/gi, "a").replace(/enter/gi,"e").replace(/imes/gi,"i").replace(/ober/gi,"o").replace(/ufat/gi,"u").toLowerCase();
     return frasedecod;
-    return frasedecod;
+    alert('Descriptografada com sucesso!');
 }
 
 //Este botão copia o conteúdo da caixa do texto criptografado para a área de transferência (CTRL + C)
