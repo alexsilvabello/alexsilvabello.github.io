@@ -26,6 +26,38 @@ function codificar(frase) {
 }
 
 
+// Leitura do campo input e descodifica a frase!
+var botaoDescriptografar = document.querySelector("#btn-descripto");
+botaoDescriptografar.addEventListener("click", function() {
+    event.preventDefault();
+    var formcodificar = document.querySelector('#criptografa');
+    var formmensagem = document.querySelector('#mensagem')
+    var caixatexto2 = document.querySelector('#inputtexto')
+    var frasedescriptografar = formcodificar.inputtexto.value;
+    var frasedescodificada = descodificar(frasedescriptografar);
+    console.log(frasedescodificada);
+    console.log(caixatexto2);
+    caixatexto2.value = frasedescodificada;
+});
+
+//Esta função descodifica a frase
+function descodificar(frase){
+    frasedecod = frase.replace(/ai/gi, "a").replace(/enter/gi,"e").replace(/imes/gi,"i").replace(/ober/gi,"o").replace(/ufat/gi,"u").toLowerCase();
+    return frasedecod;
+    return frasedecod;
+}
+
+//Este botão copia o conteúdo da caixa do texto criptografado para a área de transferência (CTRL + C)
+var botaoCopiar = document.querySelector('#btn-copy');
+botaoCopiar.addEventListener("click", function(){
+    event.preventDefault();
+    var textArea = document.querySelector('#msg');
+    textArea.select();
+    document.execCommand('copy');
+	alert('Texto copiado para a área de transferência!')
+});
+
+
 
 /* Regras Codificador: 
 "e" é convertido para "enter" 
