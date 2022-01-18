@@ -17,6 +17,7 @@ botaoCriptografar.addEventListener("click", function() {
     frasecriptografar = normalizar(frasecriptografar);
     var frasecodificada = codificar(frasecriptografar);
     caixatexto.value = frasecodificada;
+	alert('Criptografada com sucesso!');
 });
 
 // Função para codificar a palavra / frase
@@ -38,6 +39,7 @@ botaoDescriptografar.addEventListener("click", function() {
     console.log(frasedescodificada);
     console.log(caixatexto2);
     caixatexto2.value = frasedescodificada;
+	alert('Desriptografada com sucesso!')
 });
 
 //Esta função descodifica a frase
