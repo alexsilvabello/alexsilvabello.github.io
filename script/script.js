@@ -65,7 +65,7 @@ function desconvert(frase) {
         .replace(/imes/gi, "i")
         .replace(/ai/gi, "a")
         .replace(/ober/gi, "o")
-        .replace(/ufat/gi, "u");
+        .replace(/ufat/gi, "u").toLowerCase();
 
     return nova_Frase_desconvert;
 
