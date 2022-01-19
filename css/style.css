@@ -1,4 +1,5 @@
 * {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,7 +28,7 @@ body {
 
 }
 
-.box {
+.content_Inicial {
   padding: 10px;
   margin: 0 10px 0 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -39,7 +40,7 @@ body {
 
 
 
-.btn {
+button {
   border: 0;
   color: white;
   font-weight: bold;
@@ -51,16 +52,50 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.btn:hover {
+.button_Cripto:after {
+  content: 'CRIPTOGRAFAR';
+  font-size: 12px ;
+}
+
+.button_Descripto:after{
+  content: 'DESCRIPTOGRAFAR';
+  font-size: 12px ;
+}
+
+
+button:hover {
   background: rgb(255, 255, 255);
   color: #18acfe;
 }
 
-.text-input {
+#cripto {
+color: rgb(0, 0, 0);
+font-size: 1.6rem;
+width: 400px; 
+height: 100px; 
+/*resize: none;*/
+}
+
+#resultado {
+color: rgb(0, 0, 0);
+font-size: 1.6rem;
+width: 400px; 
+height: 100px; 
+/*resize: none;*/
+}
+
+.content_Result {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
   border-radius: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: block;
-  padding: 0.5em;
-  width: 100%;
-  height: 50px;
+  width: 30vw;
+  height: auto;
+}
+
+.button_Copia:after{
+  content: 'COPIAR TEXTO';
+  font-size: 12px ;
+  width: 14vw;
 }
