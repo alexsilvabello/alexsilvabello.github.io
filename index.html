@@ -5,27 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codificador de frases - Iniciante em Programação - ONE</title>
+ 
+ 
   <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 <body>
   <h1 class="titulo">Código Secreto</h1>
 
   <main class="main">
-    <section class="form box">
-      <form  id="criptografa" action="" >
-        <label for="input-texto">Digite o texto aqui!</label>
-        <input class="text-input" type="text" name="inputtexto" id="inputtexto" placeholder="insira o texto aqui">
-        <input class="btn" type="submit" value="criptografar!" id="btn-cripto">
-        <input class="btn" type="submit" value="descriptografar!" id="btn-descripto">
-      </form>
+    <section class="content_Inicial">
+      <h1>Digite o texto aqui:</h1>
+        <textarea name="cripto" id="cripto"></textarea>
+        <button class="button_Cripto" title="Criptografar"></button>
+        <button class="button_Descripto" title="Descriptografar"></button>
     </section>
-  
-    <section class="msg box">
-	<form id="mensagem">
-      	  <label for="input-texto">Resultados:</label>
-      	  <input class="text-input" type="text" id="msg" placeholder="Seu texto criptografado sairá aqui"></input>
-      	  <input class="btn" type="submit" value="copiar" id="btn-copy">
-	</form>
+      
+    <section class="content_Result">
+      <h1>Resultado:</h1>
+      	  <textarea name="textearea" id="resultado"></textarea>
+          <main>
+      	  <button class="button_Copia" title="copiar o texto"></button>
+          </main>
     </section>
   </main>
 
