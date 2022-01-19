@@ -41,7 +41,7 @@ button_Copia.addEventListener('click', (event) => {
 
     document.execCommand('copy');
     frase.value = "";
-    alert("copiado");
+    alert("copiado")
     
 })
 
@@ -49,7 +49,7 @@ button_Copia.addEventListener('click', (event) => {
 
 function convert(frase) {
 
-    let nova_Frase = frase.replace(/e/gi, "enter");
+    let nova_Frase = frase.replace(/e/gi, "enter")
         .replace(/i/gi, "imes")
         .replace(/a/gi, "ai")
         .replace(/o/gi, "ober")
@@ -65,7 +65,7 @@ function desconvert(frase) {
         .replace(/imes/gi, "i")
         .replace(/ai/gi, "a")
         .replace(/ober/gi, "o")
-        .replace(/ufat/gi, "u")
+        .replace(/ufat/gi, "u");
 
     return nova_Frase_desconvert;
 
