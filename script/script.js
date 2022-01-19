@@ -1,65 +1,89 @@
+let frase = document.querySelector("#cripto");
 
-// Função que remove caracteres especiais / acentos para codificar/decodificar a frase
-function normalizar(frase){
-    fraselimpa = frase.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    return fraselimpa;
+let button_Cripto = document.querySelector(".button_Cripto");
 
-}
+let button_Descripto = document.querySelector(".button_Descripto");
 
-// Botão para leitura do campo input e codificação da frase.
-var botaoCriptografar = document.querySelector("#btn-cripto");
-botaoCriptografar.addEventListener("click", function() {
+let button_Copia = document.querySelector(".button_Copia");
+
+let result = document.querySelector("#resultado");
+
+let button_Result = document.querySelector(".button_Result");
+
+const regex = new RegExp("^[a-z 0-9\b]");
+
+
+button_Cripto.addEventListener('click', (event) => {
+
     event.preventDefault();
-    var formcodificar = document.querySelector('#criptografa');
-    var formmensagem = document.querySelector('#mensagem')
-    var caixatexto = document.querySelector('#msg')
-    var frasecriptografar = formcodificar.inputtexto.value;
-    frasecriptografar = normalizar(frasecriptografar);
-    var frasecodificada = codificar(frasecriptografar);
-    caixatexto.value = frasecodificada;
-	
-});
 
-// Função para codificar a palavra / frase
-function codificar(frase) {
-    frasecod = frase.replace(/i/gi,"imes").replace(/e/gi,"enter").replace(/a/gi, "ai").replace(/o/gi,"ober").replace(/u/gi,"ufat").toLowerCase();
-    return frasecod;
-    alert('Criptografada com sucesso!');
-}
+    result.textContent = caracteres(convert(frase.value));
 
+    frase.value = "";
 
-// Leitura do campo input e descodifica a frase!
-var botaoDescriptografar = document.querySelector("#btn-descripto");
-botaoDescriptografar.addEventListener("click", function() {
+})
+
+button_Descripto.addEventListener('click', (event) => {
+
     event.preventDefault();
-    var formcodificar = document.querySelector('#criptografa');
-    var formmensagem = document.querySelector('#mensagem')
-    var caixatexto2 = document.querySelector('#inputtexto')
-    var frasedescriptografar = formcodificar.inputtexto.value;
-    var frasedescodificada = descodificar(frasedescriptografar);
-    console.log(frasedescodificada);
-    console.log(caixatexto2);
-    caixatexto2.value = frasedescodificada;
-	
-});
 
-//Esta função descodifica a frase
-function descodificar(frase){
-    frasedecod = frase.replace(/ai/gi, "a").replace(/enter/gi,"e").replace(/imes/gi,"i").replace(/ober/gi,"o").replace(/ufat/gi,"u").toLowerCase();
-    return frasedecod;
-    alert('Descriptografada com sucesso!');
-}
+    result.textContent = caracteres(desconvert(frase.value));
 
-//Este botão copia o conteúdo da caixa do texto criptografado para a área de transferência (CTRL + C)
-var botaoCopiar = document.querySelector('#btn-copy');
-botaoCopiar.addEventListener("click", function(){
+    frase.value = "";
+
+})
+
+button_Copia.addEventListener('click', (event) => {
+
     event.preventDefault();
-    var textArea = document.querySelector('#msg');
-    textArea.select();
+
+    result.select();
+
     document.execCommand('copy');
-	alert('Texto copiado para a área de transferência!')
-});
+    frase.value = "";
+    alert("copiado")
+    
+})
 
+
+
+function convert(frase) {
+
+    let nova_Frase = frase.replace(/e/gi, "enter")
+        .replace(/i/gi, "imes")
+        .replace(/a/gi, "ai")
+        .replace(/o/gi, "ober")
+        .replace(/u/gi, "ufat").toLowerCase();
+
+    return nova_Frase;
+
+}
+
+function desconvert(frase) {
+
+    let nova_Frase_desconvert = frase.replace(/enter/gi, "e")
+        .replace(/imes/gi, "i")
+        .replace(/ai/gi, "a")
+        .replace(/ober/gi, "o")
+        .replace(/ufat/gi, "u");
+
+    return nova_Frase_desconvert;
+
+}
+
+function caracteres(frase_teste) {
+
+    if (!regex.test(frase_teste)) {
+
+        return "CARACTERES ESPECIAIS NÃO SÃO PERIMITIDOS"
+    }
+
+    else {
+        return  frase_teste;
+
+    }
+
+}
 
 
 /* Regras Codificador: 
