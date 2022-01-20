@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #18acfe;
+  background-color: #E5E5E5;
   font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
   width: 30vw;
   margin: auto;
   text-align: center;
-  color: #ffffff; 
+  color: #0A3871; 
   font-weight: bold;
 }
 
@@ -108,7 +108,7 @@ height: 100px;
 
 .rodape {
   font-size: small;
-  color: rgb(255, 255, 255);
+  color: #0A3871;
   text-align: center;
   position: fixed;
 	bottom: 1vh;
@@ -116,5 +116,5 @@ height: 100px;
 }
 
 a {
-  color: azure;
+  color: rgb(71, 144, 255)
 }
