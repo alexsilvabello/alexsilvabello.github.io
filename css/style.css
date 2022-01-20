@@ -13,6 +13,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
 }
 
+
 .main {
   width: 80vw;
   margin: auto;
@@ -25,7 +26,7 @@ body {
   width: 30vw;
   margin: auto;
   text-align: center;
-  color: #0A3871; 
+  color: #ffffff; 
   font-weight: bold;
 }
 
