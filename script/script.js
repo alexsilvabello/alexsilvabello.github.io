@@ -1,15 +1,14 @@
+// Lê o campo textarea a ser criptografada
 let frase = document.querySelector("#cripto");
-
+// Chama a função para criptografar
 let button_Cripto = document.querySelector(".button_Cripto");
-
+// Chama a função para descriptografar
 let button_Descripto = document.querySelector(".button_Descripto");
-
+// Chama a função do botão copiar
 let button_Copia = document.querySelector(".button_Copia");
-
+// Lê o campo textarea do resultado
 let result = document.querySelector("#resultado");
-
-let button_Result = document.querySelector(".button_Result");
-
+// Chama a função para não permitir caracteres especiais
 const regex = new RegExp("^[a-z 0-9\b]");
 
 
@@ -40,8 +39,7 @@ button_Copia.addEventListener('click', (event) => {
     result.select();
 
     document.execCommand('copy');
-    frase.value = "";
-    alert("copiado")
+    alert("Copiado para área de transferência")
     
 })
 
@@ -85,6 +83,8 @@ function caracteres(frase_teste) {
 
 }
 
+
+//Regras mantidar para recordação futura
 
 /* Regras Codificador: 
 "e" é convertido para "enter" 
