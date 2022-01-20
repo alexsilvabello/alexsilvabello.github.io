@@ -1,13 +1,14 @@
-* {
-  font-family:  arial, Verdana, Geneva, Tahoma, sans-serif;
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+#logo {
+  margin: 20px;
+}
 
 body {
-  
   background-color: #18acfe;
   font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
 }
@@ -24,8 +25,13 @@ body {
   width: 30vw;
   margin: auto;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #ffffff; 
+  font-weight: bold;
+}
 
+.sub {
+  color: #0A3871;
+  font-weight: bold;
 }
 
 .content_Inicial {
@@ -38,7 +44,10 @@ body {
   height: auto;
 }
 
-
+.alerta {
+  font-size: smaller;
+  color: gray;
+}
 
 button {
   border: 0;
@@ -62,26 +71,23 @@ button {
   font-size: 12px ;
 }
 
-
 button:hover {
   background: rgb(255, 255, 255);
   color: #18acfe;
 }
 
 #cripto {
-color: rgb(0, 0, 0);
+color: #18acfe;
 font-size: 1.6rem;
 width: 400px; 
 height: 100px; 
-/*resize: none;*/
 }
 
 #resultado {
-color: rgb(0, 0, 0);
+color: #18acfe;
 font-size: 1.6rem;
 width: 400px; 
 height: 100px; 
-/*resize: none;*/
 }
 
 .content_Result {
@@ -98,4 +104,17 @@ height: 100px;
   content: 'COPIAR TEXTO';
   font-size: 12px ;
   width: 14vw;
+}
+
+footer {
+  font-size: small;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: fixed;
+	bottom: 1vh;
+	width:100%;
+}
+
+a {
+  color: azure;
 }
