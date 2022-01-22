@@ -9,7 +9,7 @@ let button_Copia = document.querySelector(".button_Copia");
 // Lê o campo textarea do resultado
 let result = document.querySelector("#resultado");
 // Chama a função para não permitir caracteres especiais
-const regex = new RegExp("^[a-z\b]");
+const regex = new RegExp("^[a-z \b]");
 
 
 button_Cripto.addEventListener('click', (event) => {
