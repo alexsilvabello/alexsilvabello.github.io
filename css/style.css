@@ -4,13 +4,26 @@
   box-sizing: border-box;
 }
 
+
 #logo {
-  margin: 20px;
+  margin: 10px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 90px;
 }
+
+#linkedin  {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right; 
+}
+
+
 
 body {
  /*background-color: #18acfe;*/
-  font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
+  font-family: Verdana, Times, Tahoma, Arial, sans-serif;
 }
 
 .main {
