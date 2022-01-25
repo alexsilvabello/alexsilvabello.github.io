@@ -78,6 +78,80 @@ button {
   cursor:  pointer;
   transition: 0.3s ease-in-out;
 }
+/*
+.button_Cripto {
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color: #18acfe;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button_Descripto {
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color: #18acfe;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+*/
+
+.button_Cripto{
+position: relative;
+  animation-name: btncri;
+  animation-duration: 2s;  
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+.button_Descripto{
+  position: relative;
+  animation-name: btncri1;
+  animation-duration: 2s;  
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+
+.button_Copia{
+  position: relative;
+  animation-name: btncri1;
+  animation-duration: 2s;  
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px} 
+} 
+
+@keyframes btncri {
+  from {bottom: 1000px;}
+  to {bottom: 0px;}
+}
+
+@keyframes btncri1{
+  from {right : 1000px;}
+  to {right : 0px;}
+}
+
+@keyframes btncri2{
+  from {left : 1000px;}
+  to {left : 0px;}
+}
 
 .button_Cripto:after {
   content: 'CRIPTOGRAFAR';
@@ -89,10 +163,12 @@ button {
   font-size: 12px ;
 }
 
-.button_cola:after {
-  content: 'COLAR';
+.button_Copia:after{
+  content: 'COPIAR TEXTO';
   font-size: 12px ;
+  width: 14vw;
 }
+
 
 button:hover {
   background: rgb(255, 255, 255);
@@ -123,12 +199,6 @@ height: 100px;
   height: auto;
 }
 
-.button_Copia:after{
-  content: 'COPIAR TEXTO';
-  font-size: 12px ;
-  width: 14vw;
-}
-
 .rodape {
   font-size: small;
   color: #ffffff;
@@ -137,6 +207,7 @@ height: 100px;
 	bottom: 1vh;
 	width:100%;
 }
+
 
 .rodape a {
   color: rgb(255, 255, 255)
