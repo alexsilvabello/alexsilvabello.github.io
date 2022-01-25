@@ -78,37 +78,12 @@ button {
   cursor:  pointer;
   transition: 0.3s ease-in-out;
 }
-/*
-.button_Cripto {
-    border: 0;
-    color: white;
-    font-weight: bold;
-    background-color: #18acfe;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 0.5em;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.button_Descripto {
-    border: 0;
-    color: white;
-    font-weight: bold;
-    background-color: #18acfe;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 0.5em;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-*/
 
 .button_Cripto{
 position: relative;
   animation-name: btncri;
   animation-duration: 2s;  
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-fill-mode: both;
   z-index: 1;
 }
