@@ -41,7 +41,7 @@ button_Copia.addEventListener('click', (event) => {
     result.select();
 
     document.execCommand('copy');
-    result.value = "";
+ // result.value = "";
     alert("Copiado para área de transferência");
  // document.location.reload(true);
     
