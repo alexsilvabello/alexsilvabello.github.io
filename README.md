@@ -1,3 +1,3 @@
 # codificador
-## Link para acesso:  https://alexsilvabello.github.io/codificador.github.io
+## Link para acesso:  https://alexsilvabello.github.io/codificador/
 Challenge Alura 
