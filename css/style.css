@@ -105,6 +105,11 @@ position: relative;
   z-index: 1;
 }
 
+.contador{
+  text-align:"center";
+  margin: 0;
+}
+
 @keyframes example {
   0%   {left:0px; top:0px;}
   25%  {left:200px; top:0px;}
